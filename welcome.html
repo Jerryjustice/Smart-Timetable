@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Smart Timetable Generator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #4caf50;
+      }
+      form {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      form input {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        flex: 1;
+        margin-right: 10px;
+      }
+      form button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      form button:hover {
+        background-color: #45a049;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table th,
+      table td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+      table th {
+        background-color: #4caf50;
+        color: white;
+      }
+      .subject-column {
+        width: 50%;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar {
+        background-color: #4caf50;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-size: 18px;
+      }
+
+      .navbar a:hover {
+        background-color: #45a049;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="welcome.html">Smart Timetable Generator</a>
+    </div>
+
+    <br /><br /><br />
+    <div class="container">
+      <h1>Smart Timetable Generator</h1>
+      <form id="timetable-form">
+        <input
+          type="number"
+          id="num-classes"
+          placeholder="Number of Classes"
+          required
+        />
+        <input
+          type="number"
+          id="num-subjects"
+          placeholder="Number of Subjects"
+          required
+        />
+        <button type="button" id="generate-timetable">
+          Generate Timetable
+        </button>
+      </form>
+      <div id="timetable"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
